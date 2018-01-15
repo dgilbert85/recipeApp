@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import '../styles/App.css'
+import RecipeForm from "./RecipeForm";
 
 export default class RecipeWindow extends Component{
 
     state = {editMode : false};
 
-    componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(){
         this.setState({editMode: false});
     }
 
     renderIngredients(){
         const ingredients = this.props.recipe.ingredients.map((ingredient, index) => {
+            console.log(ingredient);
             if(ingredient){
                 return(
                     <li className='ingredient' key={index}>{ingredient}</li>
@@ -25,7 +27,8 @@ export default class RecipeWindow extends Component{
         this.setState({ editMode : !this.state.editMode})
     };
 
-    handleSave = () => {
+    handleSave = (recipe) => {
+        this.props.save(recipe);
         this.setState({ editMode : !this.state.editMode})
     };
 
@@ -35,16 +38,17 @@ export default class RecipeWindow extends Component{
     };
 
     render(){
-        if(this.state.editMode){
+        if(this.state.editMode || this.props.recipe.ingredients.length === 0){
             return(
                 <div className='window'>
-                    time to edit
-                    <div>
-                        <button onClick={this.handleSave}>Save</button>
-                    </div>
+                    <RecipeForm
+                        recipe = {this.props.recipe}
+                        handleSave = {this.handleSave}
+                    />
                 </div>
             )
         } else {
+            console.log(this.props.recipe.ingredients.length);
             return (
                 <div className='window'>
                     <div>

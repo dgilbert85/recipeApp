@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import UUID from 'uuid-js';
 
 import '../styles/App.css'
 
@@ -11,7 +11,13 @@ export default class RecipeSidebar extends Component{
     };
 
     createNewRecipe = () => {
-      this.props.setActiveRecipe(null);
+        let newRecipe = {
+            id: UUID.create(),
+            name: 'New Recipe',
+            ingredients: []
+        };
+      this.props.addRecipe(newRecipe);
+      this.props.setActiveRecipe(newRecipe);
     };
 
     renderRecipes = () => {

@@ -10,7 +10,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     deleteRecipe: (recipeId) => (dispatch(recipeActions.deleteRecipe(recipeId))),
-    setActiveRecipe: (recipe) => (dispatch(recipeActions.setActiveRecipe(recipe)))
+    setActiveRecipe: (recipe) => (dispatch(recipeActions.setActiveRecipe(recipe))),
+    saveRecipe: (recipe) => (dispatch(recipeActions.saveRecipe(recipe))),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(RecipeWindow);

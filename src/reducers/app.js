@@ -33,8 +33,24 @@ function removeRecipe(recipes, recipeId){
     return newRecipes
 }
 
+function saveRecipe(recipes, recipeToSave){
+    let newRecipes = [];
+    for(let recipe of recipes.recipes){
+        if(recipe.id === recipeToSave.id){
+            newRecipes.push(recipeToSave);
+        } else {
+            newRecipes.push(recipe);
+        }
+    }
+
+    return newRecipes
+}
+
 export default handleActions({
     [actions.setActiveRecipe]: (state, action) => ({...state, activeRecipe: action.payload}),
     [actions.deleteRecipe]: (state, action) => ({...state, recipes: removeRecipe(state, action.payload)}),
+    [actions.saveRecipe]: (state, action) => ({...state, recipes: saveRecipe(state, action.payload)}),
+    [actions.addRecipe]: (state, action) => ({...state, recipes: [...state.recipes, action.payload]})
+
 
 }, initialState)
