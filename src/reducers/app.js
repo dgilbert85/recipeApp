@@ -6,19 +6,19 @@ import * as actions from '../actions/Recipe';
 const initialState = {
     recipes: [
         {
-            id: new UUID,
-            name: "POW POW CHICKEN",
+            id: new UUID(),
+            name: "Spicy Chicken",
             ingredients: [
                 "1 bag frozen chicken",
-                "Pow Pow Sauce"
+                "Spicy Sauce"
             ]
     },
         {
-            id: new UUID,
-            name: "pew pew chicken",
+            id: new UUID(),
+            name: "Sweet and Sour chicken",
             ingredients: [
                 "1 bag frozen chicken",
-                "Pew Pew Sauce"
+                "Sweet and Sour Sauce"
             ]
         }],
     activeRecipe: null,
@@ -51,7 +51,6 @@ export default handleActions({
     [actions.setActiveRecipe]: (state, action) => ({...state, activeRecipe: action.payload}),
     [actions.deleteRecipe]: (state, action) => ({...state, recipes: removeRecipe(state, action.payload)}),
     [actions.saveRecipe]: (state, action) => ({...state, recipes: saveRecipe(state, action.payload)}),
-    [actions.addRecipe]: (state, action) => ({...state, recipes: [...state.recipes, action.payload]})
-
+    [actions.addRecipe]: (state, action) => ({...state, recipes: [...state.recipes, action.payload]}),
 
 }, initialState)
