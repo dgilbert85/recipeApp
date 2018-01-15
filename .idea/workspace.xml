@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="551d2351-ebe0-4347-acdb-1404dc4cc74c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/src/actions/Recipe.js" afterPath="$PROJECT_DIR$/src/actions/Recipe.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecipeDetails.js" afterPath="$PROJECT_DIR$/src/components/RecipeDetails.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecipeForm.js" afterPath="$PROJECT_DIR$/src/components/RecipeForm.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecipeSidebar.js" afterPath="$PROJECT_DIR$/src/components/RecipeSidebar.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecipeWindow.js" afterPath="$PROJECT_DIR$/src/components/RecipeWindow.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/RecipeSidebar.js" afterPath="$PROJECT_DIR$/src/containers/RecipeSidebar.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/RecipeWindow.js" afterPath="$PROJECT_DIR$/src/containers/RecipeWindow.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/app.js" afterPath="$PROJECT_DIR$/src/reducers/app.js" />
-      <change beforePath="$PROJECT_DIR$/src/styles/App.css" afterPath="$PROJECT_DIR$/src/styles/App.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +40,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+              <first_editor relative-caret-position="51">
+                <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -390,12 +380,12 @@
       <workItem from="1515801749349" duration="4346000" />
       <workItem from="1515867916694" duration="28465000" />
       <workItem from="1515949511845" duration="5006000" />
-      <workItem from="1516040690168" duration="16553000" />
+      <workItem from="1516040690168" duration="16636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54370000" />
+    <option name="totallyTimeSpent" value="54453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1140" height="1447" extended-state="0" />
@@ -2941,8 +2931,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <first_editor relative-caret-position="51">
+            <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
             <folding />
           </first_editor>
           <second_editor />
