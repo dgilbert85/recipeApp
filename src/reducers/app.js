@@ -1,11 +1,12 @@
 import {handleActions} from 'redux-actions';
+import UUID from 'uuid-js';
 
 import * as actions from '../actions/Recipe';
 
 const initialState = {
     recipes: [
         {
-            id: 123456,
+            id: new UUID,
             name: "POW POW CHICKEN",
             ingredients: [
                 "1 bag frozen chicken",
@@ -13,7 +14,7 @@ const initialState = {
             ]
     },
         {
-            id: 12386894,
+            id: new UUID,
             name: "pew pew chicken",
             ingredients: [
                 "1 bag frozen chicken",
