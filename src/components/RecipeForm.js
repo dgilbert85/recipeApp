@@ -6,7 +6,6 @@ export default class RecipeForm extends Component{
     state = {recipe: this.props.recipe};
 
     save = () => {
-        console.log(this.state.recipe);
         this.props.handleSave(this.state.recipe);
     };
 
@@ -67,6 +66,8 @@ export default class RecipeForm extends Component{
 
             )
         }
-        return(null)
+        return(
+            <div></div>
+        )
     }
 }
